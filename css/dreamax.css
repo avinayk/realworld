@@ -1,0 +1,208 @@
+#swiper-slide {
+    width: 100%;
+}
+
+#swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.imgslidertext {
+    width: 55%;
+    margin-bottom: 5.208vw;
+}
+
+.lifestyle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#LHR {
+    width: 2px;
+    height: auto;
+    background: var(--black);
+    margin: 0 2.6vw;
+}
+
+.lifestyle-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lifestyle-img {
+    width: 100%;
+}
+
+.lifestyle-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#cardmord {
+    margin-left: 20vw;
+}
+
+/*------------------------------------------------*/
+.col-2-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cnumbers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.20vw;
+}
+
+/*---------------------------------------------------*/
+.teamname {
+    padding: 10vw 0;
+    overflow: hidden;
+    background: var(--black);
+    color: var(--white);
+}
+
+.teamname ul {
+    width: 100%;
+    list-style: none;
+}
+
+.teamname ul li {
+    border-bottom: 1.5px solid var(--white);
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.teamname ul li .tLinks {
+    display: flex;
+    padding: 1.5rem 0;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teamname ul li .tLinks span {
+    display: block;
+    z-index: 10;
+    mix-blend-mode: difference;
+    display: inline-block;
+    position: relative;
+    color: var(--white);
+}
+
+.teamname ul li .tLinks>img {
+    mix-blend-mode: difference;
+    z-index: 10;
+}
+
+.hover-reveal {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all .5s ease-out;
+}
+
+.hover-reveal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: transform .4s ease-out;
+}
+
+.ticon {
+    height: 3vw;
+    width: 3vw;
+}
+
+/*----------------------------------------------*/
+#policytext {
+    padding: 0 20vw;
+}
+
+/*-------------------------------------------------*/
+
+
+@media (max-width: 868px) {
+    .imgslidertext {
+        width: 65%;
+        margin-bottom: 7vw;
+    }
+
+    .lifestyle {
+        flex-direction: column-reverse;
+    }
+
+    .lifestyle-text {
+        margin-top: 7vw;
+    }
+
+    .lifestyle-img {
+        width: 100%;
+    }
+
+    #cardmord {
+        margin-left: 10vw;
+        margin-top: -10vw;
+    }
+
+    .teamname ul li .tLinks>img {
+        height: 18px;
+    }
+
+    .hover-reveal {
+        width: 220px;
+        height: 300px;
+    }
+
+    .ticon {
+        height: 5vw;
+        width: 5vw;
+    }
+}
+
+@media (max-width: 670px) {
+    .imgslidertext {
+        width: 100%;
+        margin-bottom: 15vw;
+    }
+
+    .lifestyle-text {
+        margin-top: 15vw;
+    }
+
+    #cardmord {
+        margin-left: 0;
+        margin-top: 15vw;
+    }
+
+    .col2leftitemBottom {
+        margin-top: 5vw;
+    }
+
+    #mfres {
+        margin-top: 15vw;
+    }
+
+    #mfres2 {
+        margin: 15vw 0;
+    }
+
+    #policytext {
+        padding: 0 2vw;
+    }
+}

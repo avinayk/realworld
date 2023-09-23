@@ -1,0 +1,179 @@
+#inquire {
+    display: flex;
+    padding-top: 80px;
+    min-height: 100vh;
+    height: 100%;
+}
+
+#inquireDetails {
+    background: var(--black);
+    width: 35%;
+    color: var(--white);
+}
+
+.inquireSocial {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inquireSocial a {
+    color: var(--grey2);
+    display: block;
+}
+
+.inquirehr {
+    width: 100%;
+    height: 1.5px;
+    background: var(--white);
+}
+
+#inquireForm {
+    width: 65%;
+}
+
+.formLabel>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.formline {
+    width: 100%;
+    height: 1.5px;
+    background: var(--black);
+}
+
+.formInput {
+    display: flex;
+    gap: 4vw;
+}
+
+.formInput input, select {
+    width: 100%;
+    padding: 1vw 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1.5px solid var(--grey2);
+    transition: all .3s ease;
+    font-size: 1vw;
+}
+
+.formInput input:focus {
+    border-bottom: 1.5px solid var(--black);
+}
+
+.round {
+    position: relative;
+}
+
+.round label {
+    background-color: #fff;
+    border: 1px solid var(--grey2);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+}
+
+.round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 4px;
+    left: 4.5px;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    transform: rotate(-45deg);
+    width: 8px;
+}
+
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked+label {
+    background-color: var(--black);
+    border-color: var(--black);
+}
+
+.round input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+}
+
+.formPermission{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.formPermission a{
+    color: var(--black);
+    transition: all .3s ease;
+}
+
+.formPermission a:hover{
+    opacity: .8;
+}
+
+
+@media (max-width: 1460px){
+    .formInput input, select {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 868px){
+    #inquire {
+        padding-top: 70px;
+        flex-direction: column;
+    }
+    #inquireDetails {
+        width: 100%;
+    } 
+    #inquireForm {
+        width: 100%;
+    }
+    .formInput input, select {
+        font-size: 2.2vw;
+        padding: 2vw 0;
+    }
+    .inquireSocial {
+        display: flex;
+        justify-content: center;
+        gap: 8vw;
+    }
+    .officeDetails p{
+        margin: 1vw 0;
+    }
+    .formPermission{
+        gap: 3vw;
+    }
+}
+
+@media (max-width: 670px){
+    #inquire {
+        padding-top: 50px;
+    }
+    .inquireSocial {
+        font-size: 3vw;
+    }
+    .formInput {
+        gap: 3vw;
+    }
+    .formInput input, select {
+        font-size: 3.2vw;
+        padding: 2vw 0;
+    }
+    .formPermission{
+        display: flex;
+        align-items: center;
+        gap: 6vw;
+    }
+}

@@ -1,0 +1,76 @@
+.ca {
+    align-items: flex-start;
+}
+
+#cbutton span {
+    margin: 0 5px;
+}
+
+button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--grey);
+    transition: all .5s ease;
+}
+
+button.active {
+    color: var(--black);
+}
+
+.contactrow {
+    display: flex;
+}
+
+.contactrow>div {
+    width: 50%;
+}
+
+.contactwidth {
+    width: 70%;
+}
+
+.div2 {
+    display: none;
+}
+
+.contactLinemargin {
+    margin: 4.16vw 0 1.04vw 0;
+}
+
+#LHR2 {
+    width: 2px;
+    height: 39.5vw;
+    background: var(--black);
+    margin: 0 2.6vw;
+}
+
+@media (max-width: 868px) {
+    #LHR2 {
+        display: none;
+    }
+
+    .ca .lifestyle-img {
+        margin-top: 10vw;
+    }
+
+    .contactLinemargin {
+        margin: 6vw 0 3vw 0;
+    }
+
+}
+
+@media (max-width: 670px) {
+    .contactLinemargin {
+        margin: 10vw 0 5vw 0;
+    }
+
+    .ca .lifestyle-img {
+        margin-top: 15vw;
+    }
+
+    .contactwidth {
+        width: 90%;
+    }
+}
